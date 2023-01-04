@@ -20,7 +20,7 @@ class DirectorsController < ApplicationController
   end
 
   def create
-    director_attributes = params.require(:director).permit(:title, :description)
+    director_attributes = params.require(:director).permit(:first_name, :last_name, :dob, :number_of_movies)
 
     @director = Director.new(director_attributes)
 
@@ -38,7 +38,7 @@ class DirectorsController < ApplicationController
   end
 
   def update
-    director_attributes = params.require(:director).permit(:title, :description)
+    director_attributes = params.require(:director).permit(:first_name, :last_name, :dob, :number_of_movies)
 
     @director = Director.new(director_attributes)
 
