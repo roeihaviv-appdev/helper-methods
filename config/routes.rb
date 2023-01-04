@@ -7,7 +7,10 @@ Rails.application.routes.draw do
 
   resources :movies
 
-  # resources :directors
+  resources :directors
+
+  # get "/directors" => "directors#index"
+
 
   # # CREATE
   # post "/movies" => "movies#create", as: :movies # movies_url and movies_path
