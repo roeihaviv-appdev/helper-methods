@@ -22,7 +22,7 @@ class MoviesTest < ApplicationSystemTestCase
     assert_equal original_movie_count + 1, ending_movie_count
   end
 
-  test "updating a Movie" do
+  test "updating a movie" do
     @movie = movies(:one)
 
     visit "/movies/#{@movie.id}/edit"
